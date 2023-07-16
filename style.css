@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 2px solid purple; */
+}
+
+:root {
+    --color-bg-blue: #181D31;
+    --color-beige: #E6DDC4;
+    --color-shadow-green: #678983;
+    --color-text-beige: #E6DDC4;
+    --color-text-green: #678983;
+    --color-title: #EEEEEE;
+    --color-title-shadow: black;
+    --color-title-shadow-secondary: grey;
+}
+
+.nav {
+    height: 45px;
+    background-color: var(--color-bg-blue);
+    display: flex;
+    padding: 20px 50px 20px 0;
+    justify-content: end;
+    gap: 50px; 
+}
+
+.btn {
+    height: 40px;
+    width: 90px;
+    background-color: var(--color-beige);
+    color: black;
+    border-radius: 12px;
+    box-shadow: 3px 3px var(--color-shadow-green);
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+}
+
+.btn:active {
+    translate: 3px 3px;
+    box-shadow: none;
+}
+
+.nav_btn {
+    width: 90px;
+}
+
+.sectionIntro {
+    height: 500px;
+    background-image: url("./assets/imagenes/codigo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: var(--color-title);
+    text-shadow: 2px 2px var(--color-title-shadow-secondary), 6px 6px var(--color-title-shadow);
+    font-size: 60px;
+}
+
+.main {
+    background-color: var(--color-bg-blue);
+}
+
+.mainIndex {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.title_secondary {
+    color: var(--color-text-green);
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px var(--color-title-shadow);
+}
+
+.containerContenido  {
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    height: 390px;
+    width: 350px;
+    padding-bottom: 20px;
+    background-color: var(--color-beige);
+    border: solid 5px var(--color-shadow-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_img {
+    width: 100%;
+}
+
+.card_p {
+    width: 300px;
+    text-align: center;
+}
+
+.card_btn {
+    width: 170px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    background-color: #181D31;
+    box-shadow: 2px 4px var(--color-shadow-green);
+    border-radius: 10px;
+}
+
+.footer {
+    height: 200px;
+    background-color: var(--color-text-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    padding: 0px 50px;
+}
+
+.footer_left {
+    width: 300px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px
+}
+
+.footer_p {
+    height: 80px;
+}
+
+.footer_title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+}
+
+.mainHistoria {
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.containerHistoria {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 100px 0;
+}
+
+.title_secondary_60per {
+    width: 60%;
+}
+
+.title_secondary_50per {
+    width: 50%;
+}
+
+.title_secondary_30per {
+    width: 30%;
+}
+
+.containerHistoria_p {
+    color: var(--color-text-beige);
+}
+
+.containerHistoria_p_40per {
+    width: 40%;
+}
+
+.containerHistoria_p_50per {
+    width: 50%;
+}
+
+.containerVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+    width: 90%;
+}
+
+.mainGame {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_wide {
+    width: 300px;
+}
