@@ -35,16 +35,34 @@
         <div class="containerVideo">
             <h2 class="title_secondary">Un breve video para complementar lo visto</h2>
 
-            <video class="video" controls poster="./assets/imagenes/img-video.jpg">
+            <video class="video" poster="./assets/imagenes/img-video.jpg">
                 <source src="./assets/video/historia-Comp.mp4" type="video/mp4">
                 <source src="./assets/video/historia-Comp.ogv" type="video/ogv">
             </video>
 
-            <div class="containerMediaPlayer">
-                <div class="containerMediaPlayer_left">
-                    <button class="btn">Play</button>
-                    <button class="btn">Pause</button>
+            <div class="containerPlayer">
+                <div class="progressBar progressBar_background">
+                    <div class="progressBar progressBar_foreground"></div>
                 </div>
+                
+                <div class="containerControls">
+                    <div>
+                        <button class="btn">Play</button>
+                        <button class="btn">Pause</button>
+                        <button class="btn">FFx10s</button>
+                        <button class="btn">RWx10s</button>
+                    </div>
+                
+                    <div class="timer">
+                        <p class="timer_currMinutes">00</p>
+                        <p>:</p>
+                        <p class="timer_currSeconds">00</p>
+                        <p>/</p>
+                        <p class="timer_minutes">00</p>
+                        <p>:</p>
+                        <p class="timer_seconds">00</p>
+                    </div>
+                </div>  
             </div>
         </div>
     </main>

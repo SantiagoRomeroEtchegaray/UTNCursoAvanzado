@@ -13,6 +13,8 @@
     --color-title: #EEEEEE;
     --color-title-shadow: black;
     --color-title-shadow-secondary: grey;
+    --color-progress-bar: red;
+    --height-progress-bar: 10px;
 }
 
 .nav {
@@ -188,10 +190,54 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.containerVideo:hover .containerPlayer {
+    transform: translateY(0);
+    transition: .3s;
 }
 
 .video {
-    width: 90%;
+    width: 100%;
+}
+
+.containerPlayer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: grey;
+    opacity: .9;
+}
+
+.containerPlayer_hidden {
+    transform: translateY(100%) translateY(calc(var(--height-progress-bar) * -1));
+}
+
+.progressBar {
+    height: var(--height-progress-bar);
+}
+
+.progressBar_background {
+    width: 100%;
+    background-color: black;
+}
+
+.progressBar_foreground {
+    width: 0;
+    background-color: var(--color-progress-bar);
+}
+
+.containerControls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.timer {
+    display: flex;
 }
 
 .mainGame {
