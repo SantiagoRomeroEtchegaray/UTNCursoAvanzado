@@ -27,15 +27,12 @@
 }
 
 .btn {
-    height: 40px;
-    width: 90px;
+    text-align: center;
+    text-decoration: none;
     background-color: var(--color-beige);
     color: black;
     border-radius: 12px;
     box-shadow: 3px 3px var(--color-shadow-green);
-    text-decoration: none;
-    text-align: center;
-    line-height: 40px;
 }
 
 .btn:active {
@@ -44,11 +41,12 @@
 }
 
 .nav_btn {
-    width: 90px;
+    padding: .75em 1.25em;
 }
 
 .sectionIntro {
-    height: 500px;
+    /* min-height: 500px; */
+    min-height: 80vh;
     background-image: url("./assets/imagenes/codigo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,6 +60,7 @@
     color: var(--color-title);
     text-shadow: 2px 2px var(--color-title-shadow-secondary), 6px 6px var(--color-title-shadow);
     font-size: 60px;
+    text-align: center;
 }
 
 .main {
@@ -92,7 +91,7 @@
 
 .card {
     height: 390px;
-    width: 350px;
+    max-width: 350px;
     padding-bottom: 20px;
     background-color: var(--color-beige);
     border: solid 5px var(--color-shadow-green);
@@ -107,47 +106,44 @@
 }
 
 .card_p {
-    width: 300px;
+    max-width: 300px;
     text-align: center;
 }
 
 .card_btn {
-    width: 170px;
-    height: 40px;
     color: white;
-    font-size: 16px;
     background-color: #181D31;
     box-shadow: 2px 4px var(--color-shadow-green);
     border-radius: 10px;
+    padding: .75em 1.75em;
 }
 
 .footer {
-    height: 200px;
     background-color: var(--color-text-green);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 90px;
-    padding: 0px 50px;
+    gap: 5.6em;
+    padding: 3em;
 }
 
 .footer_left {
-    width: 300px;
-    height: 90px;
+    max-width: 300px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     gap: 50px
 }
 
-.footer_p {
-    height: 80px;
+.footer_img {
+    width: 40%;
 }
 
 .footer_title {
     text-transform: uppercase;
     text-align: center;
-    font-size: 14px;
+    align-self: center;
+    font-size: .9rem;
 }
 
 .mainHistoria {
@@ -248,5 +244,5 @@
 }
 
 .btn_wide {
-    width: 300px;
+    padding: .75em 8em;
 }
