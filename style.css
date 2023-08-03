@@ -18,12 +18,34 @@
 }
 
 .nav {
-    height: 45px;
     background-color: var(--color-bg-blue);
     display: flex;
-    padding: 20px 50px 20px 0;
-    justify-content: end;
-    gap: 50px; 
+    justify-content: space-between;
+    padding: 0 4em;
+}
+
+.nav_logo {
+    transition: all .75s;
+}
+
+.nav_logo:hover {
+    transform: scale(1.08);
+}
+
+.nav_anim {
+    animation: animLogo 1.5s forwards;
+    opacity: 0;
+}
+
+.nav_anim_delayed {
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+
+.nav_containerBtn {
+    display: flex;
+    align-self: center; 
+    gap: 4em; 
 }
 
 .btn {
@@ -31,8 +53,13 @@
     text-decoration: none;
     background-color: var(--color-beige);
     color: black;
-    border-radius: 12px;
+    border-radius: 1em;
     box-shadow: 3px 3px var(--color-shadow-green);
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 .btn:active {
@@ -44,8 +71,7 @@
     padding: .75em 1.25em;
 }
 
-.sectionIntro {
-    /* min-height: 500px; */
+.hero {
     min-height: 80vh;
     background-image: url("./assets/imagenes/codigo.jpg");
     background-repeat: no-repeat;
@@ -59,46 +85,46 @@
 .title {
     color: var(--color-title);
     text-shadow: 2px 2px var(--color-title-shadow-secondary), 6px 6px var(--color-title-shadow);
-    font-size: 60px;
+    font-size: 3.75rem;
     text-align: center;
 }
 
 .main {
     background-color: var(--color-bg-blue);
+    padding: 5em 0;
 }
 
-.mainIndex {
-    height: 120vh;
+.main_index {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    gap: 5em;
 }
 
 .title_secondary {
     color: var(--color-text-green);
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
     text-shadow: 2px 2px var(--color-title-shadow);
 }
 
-.containerContenido  {
+.containerCards  {
     width: 100%;
-    margin-top: 200px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .card {
-    height: 390px;
     max-width: 350px;
-    padding-bottom: 20px;
+    width: 30%;
+    padding-bottom: 1em;
     background-color: var(--color-beige);
     border: solid 5px var(--color-shadow-green);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 3em;
 }
 
 .card_img {
@@ -106,7 +132,7 @@
 }
 
 .card_p {
-    max-width: 300px;
+    width: 80%;
     text-align: center;
 }
 
@@ -114,7 +140,7 @@
     color: white;
     background-color: #181D31;
     box-shadow: 2px 4px var(--color-shadow-green);
-    border-radius: 10px;
+    border-radius: 1em;
     padding: .75em 1.75em;
 }
 
@@ -123,16 +149,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5.6em;
     padding: 3em;
 }
 
 .footer_left {
     max-width: 300px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 50px
+    gap: 3em;
 }
 
 .footer_img {
@@ -146,16 +169,18 @@
     font-size: .9rem;
 }
 
-.mainHistoria {
-    justify-content: space-around;
-    padding: 100px;
+.main_historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10em;
 }
 
 .containerHistoria {
+    width: 90%;
     display: flex;
     align-items: center;
-    gap: 20px;
-    margin: 100px 0;
+    gap: 1em;
 }
 
 .title_secondary_60per {
@@ -183,16 +208,18 @@
 }
 
 .containerVideo {
+    max-width: 910px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     overflow: hidden;
+    gap: 1em;
 }
 
 .containerVideo:hover .containerPlayer {
     transform: translateY(0);
-    transition: .3s;
 }
 
 .video {
@@ -203,8 +230,9 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: grey;
+    background-color: var(--color-beige);
     opacity: .9;
+    transition: .5s;
 }
 
 .containerPlayer_hidden {
@@ -229,15 +257,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: .5em;
+}
+
+.btn_svg { 
+    padding: .5em;
+    width: 2em;
+    height: 2em;
+}
+
+.btn_svg_polygon {
+    fill: var(--color-text-green);
+    stroke: var(--color-bg-blue);
+    stroke-width: 2px;
 }
 
 .timer {
     display: flex;
 }
 
-.mainGame {
-    padding: 100px;
+.main_game {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,4 +284,16 @@
 
 .btn_wide {
     padding: .75em 8em;
+}
+
+@keyframes animLogo {
+    from {
+        opacity: 0;
+        transform: translate(0, -20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }

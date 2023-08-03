@@ -8,15 +8,26 @@
 </head>
 <body>
     <nav class="nav">
-        <a class="btn nav_btn" href="./history.html">Historia</a>
-        <a class="btn nav_btn" href="./game.html">Jugemos</a>
+        <a href="./index.html" class="nav_logo">
+            <svg width="200" height="80">
+                <rect class="nav_anim" x="45" y="5" width="60" height="35" rx="5" fill="#F0E9D2"></rect>
+                <rect class="nav_anim nav_anim_delayed" x="50" y="10" width="50" height="25" rx="5" fill="#495579"></rect>
+                <polygon class="nav_anim" points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2"></polygon>
+                <polygon class="nav_anim nav_anim_delayed" points="57 48 ,92 48,104 58,43 58" fill="#495579"></polygon>
+            </svg>
+        </a>
+
+        <div class="nav_containerBtn">
+            <a class="btn nav_btn" href="./history.html">Historia</a>
+            <a class="btn nav_btn" href="./game.html">Jugemos</a>
+        </div>
     </nav>
 
-    <section class="sectionIntro">
+    <section class="hero">
         <h1 class="title">Historia de la programacion</h1>
     </section>
 
-    <main class="main mainHistoria">
+    <main class="main main_historia">
         <div class="containerHistoria">
             <h2 class="title_secondary title_secondary_60per">El principio de la historia de la programación</h2>
             <p class="containerHistoria_p containerHistoria_p_40per">El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage. El propósito de este algoritmo era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.</p>
@@ -47,10 +58,36 @@
                 
                 <div class="containerControls">
                     <div>
-                        <button class="btn">Play</button>
-                        <button class="btn">Pause</button>
-                        <button class="btn">FFx10s</button>
-                        <button class="btn">RWx10s</button>
+                        <!-- Play -->
+                        <button class="btn">
+                            <svg viewBox="0 0 30 30" height="30" width="30" class="btn_svg">
+                                <polygon class="btn_svg_polygon" points="0,0 30,15 0,30"/>
+                            </svg>
+                        </button>
+
+                        <!-- Pause -->
+                        <button class="btn">
+                            <svg viewBox="0 0 30 30" height="30" width="30" class="btn_svg">
+                                <polygon class="btn_svg_polygon" points="5,0 10,0 10,30 5,30"/>
+                                <polygon class="btn_svg_polygon" points="20,0 25,0 25,30 20,30"/>
+                            </svg>
+                        </button>
+
+                        <!-- Rewind -->
+                        <button class="btn">
+                            <svg viewBox="0 0 30 30" height="30" width="30" class="btn_svg">
+                                <polygon class="btn_svg_polygon" points="0,15 15,0 15,30"/>
+                                <polygon class="btn_svg_polygon" points="15,15 30,0 30,30"/>
+                            </svg>
+                        </button>
+
+                        <!-- FF -->
+                        <button class="btn">
+                            <svg viewBox="0 0 30 30" height="30" width="30" class="btn_svg">
+                                <polygon class="btn_svg_polygon" points="0,0 15,15 0,30"/>
+                                <polygon class="btn_svg_polygon" points="15,0 30,15 15,30"/>
+                            </svg>
+                        </button>
                     </div>
                 
                     <div class="timer">

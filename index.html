@@ -8,18 +8,29 @@
 </head>
 <body>
     <nav class="nav">
-        <a class="btn nav_btn" href="./history.html">Historia</a>
-        <a class="btn nav_btn" href="./game.html">Jugemos</a>
+        <a href="./index.html" class="nav_logo">
+            <svg width="200" height="80">
+                <rect class="nav_anim" x="45" y="5" width="60" height="35" rx="5" fill="#F0E9D2"></rect>
+                <rect class="nav_anim nav_anim_delayed" x="50" y="10" width="50" height="25" rx="5" fill="#495579"></rect>
+                <polygon class="nav_anim" points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2"></polygon>
+                <polygon class="nav_anim nav_anim_delayed" points="57 48 ,92 48,104 58,43 58" fill="#495579"></polygon>
+            </svg>
+        </a>
+
+        <div class="nav_containerBtn">
+            <a class="btn nav_btn" href="./history.html">Historia</a>
+            <a class="btn nav_btn" href="./game.html">Jugemos</a>
+        </div>
     </nav>
 
-    <section class="sectionIntro">
+    <section class="hero">
         <h1 class="title">Programacion e historia</h1>
     </section>
 
-    <main class="main mainIndex">
+    <main class="main main_index">
         <h2 class="title_secondary">Contenido</h2>
 
-        <div class="containerContenido">
+        <div class="containerCards">
             <div class="card">
                 <img class="card_img" src="./assets/imagenes/img1.jpg" alt="computadora vieja">
                 <p class="card_p">Conozcamos Un poco sobre la historia de la programacion</p>
