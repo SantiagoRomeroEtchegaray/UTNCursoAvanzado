@@ -9,11 +9,11 @@
 <body>
     <nav class="nav">
         <a href="./index.html" class="nav_logo">
-            <svg width="200" height="80">
-                <rect class="nav_anim" x="45" y="5" width="60" height="35" rx="5" fill="#F0E9D2"></rect>
-                <rect class="nav_anim nav_anim_delayed" x="50" y="10" width="50" height="25" rx="5" fill="#495579"></rect>
-                <polygon class="nav_anim" points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2"></polygon>
-                <polygon class="nav_anim nav_anim_delayed" points="57 48 ,92 48,104 58,43 58" fill="#495579"></polygon>
+            <svg width="85" height="57">
+                <rect class="nav_anim" x="15" y="0" width="60" height="35" rx="5" fill="#F0E9D2"></rect>
+                <rect class="nav_anim nav_anim_delayed" x="20" y="5" width="50" height="25" rx="5" fill="#495579"></rect>
+                <polygon class="nav_anim" points="25 40, 65 40, 85 57, 0 57" fill="#F0E9D2"></polygon>
+                <polygon class="nav_anim nav_anim_delayed" points="27 43, 62 43, 74 53, 13 53" fill="#495579"></polygon>
             </svg>
         </a>
 
@@ -30,17 +30,25 @@
     <main class="main main_game">
         <h2 class="title_secondary">Armemos el rompecabezas y veamos que imagen es...</h2>
 
-        <div class="containerGame">
-
+        <div class="containerPuzzle">
+            <div class="puzzlePlaceholder">
+                <p class="puzzlePlaceholder_p">Arrastre y suelte la imágenen aquí</p>
+            </div>
+            <div class="puzzlePlaceholder">
+                <p class="puzzlePlaceholder_p">Arrastre y suelte la imágenen aquí</p>
+            </div>
+            <div class="puzzlePlaceholder">
+                <p class="puzzlePlaceholder_p">Arrastre y suelte la imágenen aquí</p>
+            </div>
         </div>
 
-        <div class="containerGamePicks">
-            <img src="./assets/imagenes/Rompe1.png" alt="">
-            <img src="./assets/imagenes/Rompe2.png" alt="">
-            <img src="./assets/imagenes/Rompe3.png" alt="">
+        <div class="containerPuzzle containerPuzzle_gap">
+            <img id="img1" class="img_puzzle" src="./assets/imagenes/Rompe3.png" alt="Rompecabeza">
+            <img id="img2" class="img_puzzle" src="./assets/imagenes/Rompe1.png" alt="Rompecabeza">
+            <img id="img3" class="img_puzzle" src="./assets/imagenes/Rompe2.png" alt="Rompecabeza">
         </div>
 
-        <button class="btn btn_wide">Reiniciar</button>
+        <button id="btn_reset" class="btn btn_wide">Reiniciar</button>
     </main>
 
     <footer class="footer">
@@ -48,7 +56,10 @@
             <img class="footer_img" src="./assets/imagenes/logo.png" alt="logo">
             <h3 class="footer_title">Programacion e historia</h3>
         </div>
+
         <p class="footer_p">Sitio con fines educativos - Creado por M.Victoria Lopez</p>
     </footer>
+
+    <script src="./game.js"></script>
 </body>
 </html>
