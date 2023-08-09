@@ -80,6 +80,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,7 +265,7 @@
 }
 
 .btn_svg { 
-    padding: .5em;
+    padding: .7em;
     width: 2em;
     height: 2em;
 }
@@ -330,6 +331,10 @@
     padding: .75em 8em;
 }
 
+.anim_game {
+    animation: animGame .5s forwards;
+}
+
 @keyframes animLogo {
     from {
         opacity: 0;
@@ -339,6 +344,18 @@
     to {
         opacity: 1;
         transform: translate(0, 0);
+    }
+}
+
+@keyframes animGame {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -389,22 +406,25 @@
     }
 
     .title_secondary {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
-    .main_historia {
-        font-size: 0.7rem;
+    .containerControls {
+        font-size: 0.9rem;
     }
 
-    .puzzlePlaceholder {
-        font-size: 0.5rem;
+    .btn_svg,
+    .btn_wide {
+        font-size: 0.6rem;
     }
 
+    .puzzlePlaceholder, 
     .img_puzzle {
         font-size: 0.5rem;
     }
 
-    .footer {
+    .footer,
+    .main_historia {
         font-size: 0.7rem;
     }
 
@@ -424,16 +444,24 @@
         width: 60%;
     }
 
-    .puzzlePlaceholder {
-        font-size: 0.3rem;
+    .title {
+        font-size: 1.5rem;
     }
 
-    .img_puzzle {
-        font-size: 0.3rem;
+    .containerControls,
+    .title_secondary {
+        font-size: 0.6rem;
     }
 
+    .btn_svg,
+    .btn_wide {
+        font-size: 0.4rem;
+    }
+
+    .puzzlePlaceholder,
+    .img_puzzle,
     .containerPuzzle_gap {
-        gap: 0.3em;
+        font-size: 0.3rem;
     }
 
     .footer {
